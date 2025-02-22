@@ -1,0 +1,199 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #B0E0E6; /* 粉蓝色背景 */
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    max-height: 500px; /* 限制大图的最大高度 */
+    overflow-y: auto; /* 允许垂直滚动 */
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* 确保图片完整显示 */
+}
+
+.hero-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.7); /* 半透明背景 */
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 2em; /* 大一点的文字 */
+    color: #FF69B4; /* 女生颜色，粉红色 */
+    font-family: 'SimHei', sans-serif; /* 黑体 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 阴影效果 */
+}
+
+.photos, .about-me, .contact {
+    padding: 20px;
+    text-align: center;
+}
+
+.photo-gallery {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.photo-item {
+    flex: 0 0 auto;
+    margin: 5px;
+    text-align: center; /* 确保文字居中 */
+    font-family: 'SimHei', sans-serif; /* 设置字体为黑体 */
+}
+
+.photo-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px; /* 圆角边框 */
+    border: 3px solid #FFC0CB; /* 淡粉色边框 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 更明显的阴影效果 */
+}
+
+.photo-item p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #333; /* 深色字体 */
+    background-color: rgba(255, 255, 255, 0.7); /* 半透明背景 */
+    padding: 5px;
+    border-radius: 5px; /* 圆角背景 */
+    border: 2px solid #FFC0CB; /* 粉色边框 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 3D投影效果 */
+    font-family: 'SimHei', sans-serif; /* 黑体 */
+    height: 30px; /* 统一高度 */
+    line-height: 20px; /* 使文字垂直居中 */
+    overflow: hidden; /* 确保文字不溢出 */
+    text-overflow: ellipsis; /* 溢出时显示省略号 */
+    white-space: nowrap; /* 不换行 */
+}
+
+.certificates {
+    display: flex;
+    justify-content: center; /* 居中对齐 */
+    flex-wrap: wrap; /* 换行 */
+    margin-top: 20px;
+}
+
+.certificates img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover; /* 自动裁剪成正方形 */
+    border-radius: 5px; /* 圆角效果 */
+    border: 3px solid #FFC0CB; /* 淡粉色边框 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+    margin: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-around; /* 分散图标 */
+    align-items: center;
+    width: 500px; /* 固定宽度 */
+    margin: 0 auto; /* 居中 */
+    padding: 10px;
+    border: 2px solid #FFC0CB; /* 粉色边框 */
+    border-radius: 10px; /* 圆角边框 */
+    background-color: rgba(255, 255, 255, 0.8); /* 半透明背景 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+}
+
+.social-icons img {
+    width: 40px;
+    transition: transform 0.3s, filter 0.3s; /* 添加过渡效果 */
+    cursor: pointer; /* 鼠标指针 */
+}
+
+.social-icons img:hover {
+    transform: scale(1.2); /* 鼠标经过时变大 */
+}
+
+.social-icons img:active {
+    filter: brightness(0.8); /* 单击时变色 */
+}
+
+.about-me {
+    padding: 20px;
+    text-align: left; /* 左对齐文本 */
+    border: 2px solid #FFC0CB; /* 粉色边框 */
+    border-radius: 10px; /* 圆角边框 */
+    background-color: rgba(255, 255, 255, 0.8); /* 半透明白色背景 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+    max-width: 1000px; /* 增加最大宽度 */
+    margin: 20px auto; /* 居中 */
+    font-family: 'SimHei', sans-serif; /* 设置字体为黑体 */
+}
+
+.about-me h2 {
+    text-align: center; /* 标题居中 */
+    margin-bottom: 20px;
+    letter-spacing: 2px; /* 增加文字间距 */
+    text-transform: uppercase; /* 将文字转换为大写 */
+    font-weight: bold; /* 加粗字体 */
+    color: #FF69B4; /* 女生颜色，粉红色 */
+    font-family: 'SimHei', sans-serif; /* 黑体 */
+}
+
+.about-me table {
+    width: 100%;
+    border-collapse: collapse; /* 合并边框 */
+}
+
+.about-me th, .about-me td {
+    border: 1px solid #FFC0CB; /* 粉色线条 */
+    padding: 10px;
+    text-align: left;
+}
+
+.about-me th {
+    background-color: #F8F8FF; /* 淡色背景 */
+}
+
+.about-me td {
+    background-color: rgba(255, 255, 255, 0.9); /* 半透明背景 */
+}
+
+.about-me p {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 1.5em; /* 调整标题大小 */
+    }
+
+    .about-me, .photos, .contact {
+        padding: 10px; /* 减小内边距 */
+    }
+
+    .photo-item img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .certificates img {
+        width: 80px;
+        height: 80px;
+    }
+} 
